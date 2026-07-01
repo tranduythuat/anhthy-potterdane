@@ -1,0 +1,86 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.hero {
+    width: 100%;
+    aspect-ratio: 500 / 800;
+    .content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        .images-block {
+            width: 100%;
+            height: 80%;
+            position: relative;
+            @include flex-center;
+
+            .text-img {
+                max-width: 295px;
+                width: 100%;
+                position: absolute;
+                top: 23.5%;
+                left: 41.5%;            
+                transform: translateX(-50%);
+            }
+            .main-card {
+                max-width: 355px;
+                width: 100%;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            .thiep-bao-hy {
+                position: absolute;
+                max-width: 95px;
+                width: 100%;
+                bottom: 9%;
+                left: 14%;
+            }
+
+            .sub-en {
+                position: absolute;
+                bottom: 6%;
+                left: 11%;
+            }
+        }
+
+        .names-block {
+            width: 100%;
+            height: 20%;
+            @include flex-center;
+            flex-direction: column;
+            .label {
+               font-family: $font-SVG-gotham-book;
+            }
+            .husband, .wife {
+                font-size: 35px;
+                font-family: $font-TPLeMajor;
+                color: #000;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .images-block {
+                .text-img {
+                    max-width: calc((295 / 500) * 100vw);
+                }
+                .main-card {
+                    max-width: calc((355 / 500) * 100vw);
+                }
+                .thiep-bao-hy {
+                    max-width: calc((95 / 500) * 100vw);
+                }
+            }
+    
+            .names-block {
+                .husband, .wife {
+                    font-size: calc((35 / 500) * 100vw);
+                }
+            }
+            
+        }
+    }
+}

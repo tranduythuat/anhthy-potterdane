@@ -1,0 +1,217 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.invite {
+    width: 100%;
+    .content {
+        width: 100%;
+        // padding: 10% 0 0;
+        font-size: 13px;
+
+        .couple-image img{
+            max-width: 400px;
+            width: 100%;
+            height: auto;
+        }
+
+        .introduce-block {
+            padding: 10% 5%;
+            text-align: left;
+            .logo {
+                margin-bottom: 10%;
+                font-size: 68px;
+                letter-spacing: 2px;
+                span {
+                    font-size: 28px;
+                }
+            }
+            .family-info {
+                margin-bottom: 6%;
+            }
+            .invitation {
+                margin-bottom: 10%;
+            }
+            .names {
+                text-transform: uppercase;
+                .bride {
+                    margin-bottom: 10%;
+                }
+                .name {
+                    font-size: 22px;
+                }
+            }
+        }
+
+        .divider {
+            margin: 10% 0 10%;
+            perspective: 1000px;
+            img {
+                max-width: 240px;
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .invite-text {
+            font-family: $font-SVG-GothamLight;
+            text-transform: uppercase;
+            color: #000;
+            line-height: 1.4;
+            .bold {
+                font-family: $font-SVG-gotham-book;
+            }
+            i {
+                font-size: 12px;
+            }
+        }
+
+        .label {
+            font-family: $font-SVG-GothamLight;
+            text-transform: uppercase;
+            color: #000;
+            margin: 5% 0 2%;
+        }
+
+        .location {
+            font-family: $font-TPLeMajor;
+            font-size: 40px;
+            margin-bottom: 1%;
+        }
+
+        .address {
+            font-family: $font-SVG-GothamLight;
+            color: #000;
+            line-height: 1.4;
+        }
+
+        .map-btn {
+            font-size: 16px;
+            display: block;
+            text-decoration: none;
+            color: #fff;
+            background-color: $text-color;
+            max-width: 240px;
+            width: 100%;
+            aspect-ratio: 220 / 32;
+            @include flex-center;
+            border-radius: 18px;
+            margin: auto;
+            // text-transform: uppercase;
+            transition: all 0.3s ease;
+
+            &:hover {
+                background-color: darken($text-color, 10%);
+            }
+        }
+
+        .couple-art {
+            display: flex;
+            width: 100%;
+            background: url('../../assets/images/red_blur.png') no-repeat 100% 10%/ 80%;
+            .couple-image {
+                width: 55%;
+                display: flex;
+                justify-content: end;
+                align-items: end;
+                padding: 15% 0;
+                .img-box {
+                    width: 100%;
+                    max-width: 80%;
+                    aspect-ratio: 1 / 1.55;
+                    background-color: #e5e5e4ff;
+                    box-shadow: 5px 5px 5px rgb(183, 186, 187);
+                    position: relative;
+                    .flower {
+                        max-width: 164px;
+                        width: 100%;
+                        height: auto;
+                        position: absolute;
+                        top: -10%;
+                        right: -60%;
+                    }
+                    .main {
+                        background-color: #832f1e;
+                    }
+                    img {
+                        margin-top: 8%;
+                        width: 85%;
+                        height: auto;
+                    }
+                }
+            }
+            .date {
+                width: 45%;
+                display: flex;
+                align-items: end;
+                text-align: left;
+                p {
+                    margin-bottom: 25%;
+                    margin-left: 15%;
+                    font-family: $font-DFVNCatchyMager;
+                    font-size: 60px;
+                }
+            }
+        }
+
+        
+        @media (max-width: 500px) {
+            font-size: calc((13 / 500) * 100vw);
+           
+            .couple-image img{
+                max-width: calc((400 / 500) * 100vw);
+            }
+
+            .introduce-block {
+                .logo {
+                    font-size: calc((68 / 500) * 100vw);
+                    letter-spacing: calc((2 / 500) * 100vw);
+                    span {
+                        font-size: calc((28 / 500) * 100vw);
+                    }
+                }
+                .names {
+                    .name {
+                        font-size: calc((22 / 500) * 100vw);
+                    }
+                }
+            }
+    
+            .divider {
+                img {
+                    max-width: calc((240 / 500) * 100vw);
+                }
+            }
+
+            .invite-text {
+                i {
+                    font-size: calc((12 / 500) * 100vw);
+                }
+            }
+    
+            .location {
+                font-size: calc((40 / 500) * 100vw);
+            }
+       
+            .map-btn {
+                font-size: calc((16 / 500) * 100vw);
+                max-width: calc((220 / 500) * 100vw);
+                border-radius: calc((15 / 500) * 100vw);
+            }
+
+            .couple-art {
+                .couple-image {
+                    .img-box {
+                        .flower {
+                            max-width: calc((164 / 500) * 100vw);
+                        }
+                    }
+                }
+                .date {
+                    p {
+                        font-size: calc((42 / 500) * 100vw);
+                    }
+                }
+            }
+        }
+    }
+}
