@@ -40,10 +40,34 @@
                     font-size: 22px;
                 }
             }
+            .venue { 
+                padding: 10% 0;
+                text-align: center;
+                .time-label, .venue-label{
+                    margin-bottom: 3%;
+                     font-size: 18px;
+                }
+
+                .date, .venue-name {
+                    font-family: $font-DFVNCatchyMager;
+                    font-size: 46px;
+                    letter-spacing: 1px;
+                    line-height: 1;
+                    margin-bottom: -1%;
+                }
+                .time {
+                    font-family: $font-DFVNCatchyMager;
+                    font-size: 28px;
+                    margin-bottom: 10%;
+                }
+                .venue-address {
+                    margin-top: 2%;
+                }
+            }
         }
 
         .divider {
-            margin: 10% 0 10%;
+            margin: 0% 0 10%;
             perspective: 1000px;
             img {
                 max-width: 240px;
@@ -172,6 +196,20 @@
                 .names {
                     .name {
                         font-size: calc((22 / 500) * 100vw);
+                    }
+                }
+
+                .venue { 
+                    .time-label, .venue-label{
+                        font-size: calc((18 / 500) * 100vw);
+                    }
+
+                    .date, .venue-name {
+                        font-size: calc((46 / 500) * 100vw);
+                        letter-spacing:calc((1 / 500) * 100vw);
+                    }
+                    .time {
+                        font-size: calc((28 / 500) * 100vw);
                     }
                 }
             }
