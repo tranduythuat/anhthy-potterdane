@@ -605,7 +605,7 @@ section {
 }
 .timeline .items .item .time span {
   font-family: "DFVNCatchyMager", sans-serif;
-  padding: 4% 0 3%;
+  padding: 6% 0 1%;
   display: flex;
   justify-content: center;
   align-items: center;
