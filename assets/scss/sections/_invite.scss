@@ -145,6 +145,7 @@
                     background-color: #e5e5e4ff;
                     box-shadow: 5px 5px 5px rgb(183, 186, 187);
                     position: relative;
+                    @include flex-center;
                     .flower {
                         max-width: 164px;
                         width: 100%;
@@ -153,14 +154,17 @@
                         top: -10%;
                         right: -60%;
                     }
-                    .main {
+                    .main-img  {
+                        width: 85%;
+                        aspect-ratio: 1 / 1.55;
+                        background: url('../../assets/images/CUOI.png') no-repeat 50% 0% / 160%; 
                         background-color: #832f1e;
                     }
-                    img {
-                        margin-top: 8%;
-                        width: 85%;
-                        height: auto;
-                    }
+                    // img {
+                    //     margin-top: 8%;
+                    //     width: 85%;
+                    //     height: auto;
+                    // }
                 }
             }
             .date {

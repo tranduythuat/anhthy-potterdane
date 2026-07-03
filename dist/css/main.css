@@ -472,6 +472,9 @@ section {
   background-color: #e5e5e4;
   box-shadow: 5px 5px 5px rgb(183, 186, 187);
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .invite .content .couple-art .couple-image .img-box .flower {
   max-width: 164px;
@@ -481,13 +484,11 @@ section {
   top: -10%;
   right: -60%;
 }
-.invite .content .couple-art .couple-image .img-box .main {
-  background-color: #832f1e;
-}
-.invite .content .couple-art .couple-image .img-box img {
-  margin-top: 8%;
+.invite .content .couple-art .couple-image .img-box .main-img {
   width: 85%;
-  height: auto;
+  aspect-ratio: 1/1.55;
+  background: url("../../assets/images/CUOI.png") no-repeat 50% 0%/160%;
+  background-color: #832f1e;
 }
 .invite .content .couple-art .date {
   width: 45%;
