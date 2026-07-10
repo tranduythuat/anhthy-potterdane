@@ -146,6 +146,10 @@
                 }
             }
         }
+        .subtext {
+            font-size: 12px;
+            margin-top: 5%;
+        }
     }
 
     .text-img {
@@ -205,6 +209,10 @@
                 .swatch {
                     max-width: calc((42 / 500) * 100vw);
                 }
+            }
+
+            .subtext {
+                font-size: calc((12 / 500) * 100vw);
             }
         }
 

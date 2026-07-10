@@ -578,6 +578,9 @@ section {
           margin-left: 0; }
         .timeline .dresscode .palette .swatch:last-child {
           margin-right: 0; }
+    .timeline .dresscode .subtext {
+      font-size: 12px;
+      margin-top: 5%; }
   .timeline .text-img {
     margin-top: 16%;
     perspective: 500px;
@@ -609,6 +612,8 @@ section {
         max-width: calc((56 / 500) * 100vw); }
     .timeline .dresscode .palette .swatch {
       max-width: calc((42 / 500) * 100vw); }
+    .timeline .dresscode .subtext {
+      font-size: calc((12 / 500) * 100vw); }
     .timeline .text-img img {
       max-width: calc((104 / 500) * 100vw); } }
 
