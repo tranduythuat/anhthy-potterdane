@@ -6,7 +6,7 @@
     .content {
         width: 100%;
         // padding: 10% 0 0;
-        font-size: 13px;
+        font-size: 12px;
 
         .couple-image img{
             max-width: 400px;
@@ -30,14 +30,20 @@
             }
             .invitation {
                 margin-bottom: 10%;
+                font-family: $font-SVG-GothamLight;
+                text-transform: uppercase;
             }
             .names {
-                text-transform: uppercase;
                 .bride {
                     margin-bottom: 10%;
                 }
                 .name {
-                    font-size: 22px;
+                    font-size: 42px;
+                    font-family: $font-Allura;
+                    line-height: 1;
+                }
+                .title {
+                    text-transform: uppercase;
                 }
             }
             .venue { 
@@ -46,22 +52,37 @@
                 .time-label, .venue-label{
                     margin-bottom: 3%;
                      font-size: 18px;
+                     line-height: 1;
+                     i {
+                        font-size: 14px;
+                    }
                 }
 
                 .date, .venue-name {
                     font-family: $font-DFVNCatchyMager;
                     font-size: 46px;
                     letter-spacing: 1px;
-                    line-height: 1;
                     margin-bottom: -1%;
+                    i {
+                        font-size: 18px;
+                    }
+                }
+                .venue-name {
+                    line-height: .8;
                 }
                 .time {
                     font-family: $font-DFVNCatchyMager;
                     font-size: 28px;
                     margin-bottom: 10%;
+                    line-height: .8;
+                    i {
+                        font-size: 14px;
+                    }
                 }
                 .venue-address {
                     margin-top: 2%;
+                    i {
+                    }
                 }
             }
         }
@@ -85,7 +106,7 @@
                 font-family: $font-SVG-gotham-book;
             }
             i {
-                font-size: 12px;
+                font-size: 11px;
             }
         }
 
@@ -177,6 +198,7 @@
                     margin-left: 15%;
                     font-family: $font-DFVNCatchyMager;
                     font-size: 60px;
+                    line-height: 1;
                 }
             }
         }
